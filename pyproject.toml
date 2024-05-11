@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "location"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.29.0"}
+sqlmodel = "^0.0.18"
+psycopg2 = "^2.9.9"
+python-dotenv = "^1.0.1"
+
+
+
+[tool.poetry.scripts]
+dev= "location.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
